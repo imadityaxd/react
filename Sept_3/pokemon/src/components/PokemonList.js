@@ -1,17 +1,22 @@
 import React from "react";
 
-const PokemonList = ({ pokemon }) => {
-  console.log(pokemon); //receiving array of pokemon names with the help of props.
+function Pokemon({ pokemon }) {
+  //getting array of pokemon names as a prop
   return (
-    <div>
-      <div>
-        {pokemon.map((p) => {
-          //using map() method to extract the pokemon names from the array
-          return <div key={p}>{p}</div>;
-        })}
-      </div>
+    <div className="pokemon-list">
+      <h2 className="heading">Pokemon's List</h2>
+      <ul>
+        {pokemon.map(
+          (
+            name,
+            index //using map() method on array of pokemons to print it in UI.
+          ) => (
+            <li key={index}>{name}</li> //passing a key a unique value that is index, and displaying pokemons names on UI.
+          )
+        )}
+      </ul>
     </div>
   );
-};
+}
 
-export default PokemonList;
+export default Pokemon;

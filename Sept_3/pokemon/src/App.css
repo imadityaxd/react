@@ -1,0 +1,68 @@
+/* styling pokemon.js */
+
+.pokemon-list {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5733;
+    text-transform: uppercase;
+    /* Uppercase text */
+    letter-spacing: 2px;
+    /* Increased letter spacing for a modern look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add a subtle text shadow */
+    margin-bottom: 12px;
+    /* Add some spacing below the heading */
+    border-bottom: 2px solid#ff5733
+}
+
+ul {
+    color: green;
+    font-weight: bold;
+}
+
+/* styling pagination.js */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+button {
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    width: 8rem;
+    transition: 200ms;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+    outline: 0;
+    background: #f4e603;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .2), 0 3px 8px 0 rgba(0, 0, 0, .15);
+}
+
+button:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+}
