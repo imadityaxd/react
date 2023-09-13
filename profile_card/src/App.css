@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    font-family: "Monospace", "Arial", sans-serif;
+    -webkit-font-smoothing : antialiased;
+    height:100vh;
+}
+.App{
+    display: flex;
+    justify-content: center;
+    
+}
