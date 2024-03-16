@@ -16,6 +16,6 @@ const App = () => {
       <Route path='/books/delete/:id '  elements={<DeleteBook />}/>
     </Routes>
   )
-}
+};
 
 export default App
